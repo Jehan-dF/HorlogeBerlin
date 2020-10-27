@@ -15,6 +15,7 @@ class HorlogeBerlinTest extends TestCase
     }
 
     //Test method minutes
+
     public function test_min_given0_shouldReturn0(){
         $actual = $this->horlogeBerlin->minutes(0);
         $this->assertEquals(0,$actual);
@@ -48,5 +49,22 @@ class HorlogeBerlinTest extends TestCase
     public function test_min_given6_shouldReturn1(){
         $actual = $this->horlogeBerlin->minutes(6);
         $this->assertEquals(1,$actual);
+    }
+
+    //Test method fiveMinutes
+
+    public function test_fiveMin_given5_shouldReturn1(){
+        $actual = $this->horlogeBerlin->fiveMinutes(5);
+        $this->assertEquals(1,$actual);
+    }
+
+    public function test_fiveMin_given6_shouldReturn1(){
+        $actual = $this->horlogeBerlin->fiveMinutes(6);
+        $this->assertEquals(1,$actual);
+    }
+
+    public function test_fiveMin_given12_shouldReturn2(){
+        $actual = $this->horlogeBerlin->fiveMinutes(12);
+        $this->assertEquals(2,$actual);
     }
 }

@@ -7,5 +7,8 @@ class HorlogeBerlin
         return $int%5;
     }
 
+    public function fiveMinutes (int $int) : int {
+        return floor($int/5);
+    }
 
 }
