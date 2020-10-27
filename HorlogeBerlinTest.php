@@ -67,4 +67,9 @@ class HorlogeBerlinTest extends TestCase
         $actual = $this->horlogeBerlin->fiveMinutes(12);
         $this->assertEquals(2,$actual);
     }
+
+    public function test_fiveMin_given59_shouldReturn11(){
+        $actual = $this->horlogeBerlin->fiveMinutes(59);
+        $this->assertEquals(11,$actual);
+    }
 }
