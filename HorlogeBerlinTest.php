@@ -128,17 +128,17 @@ class HorlogeBerlinTest extends TestCase
 
     //Test method seconds
     public function test_seconds_given2_shouldReturn0(){
-        $actual = $this->horlogeBerlin->fiveHours(2);
+        $actual = $this->horlogeBerlin->seconds(2);
         $this->assertEquals(0,$actual);
     }
 
     public function test_seconds_given5_shouldReturn1(){
-        $actual = $this->horlogeBerlin->fiveHours(5);
+        $actual = $this->horlogeBerlin->seconds(5);
         $this->assertEquals(1,$actual);
     }
 
     public function test_seconds_given30_shouldReturn0(){
-        $actual = $this->horlogeBerlin->fiveHours(30);
+        $actual = $this->horlogeBerlin->seconds(30);
         $this->assertEquals(0,$actual);
     }
 }
