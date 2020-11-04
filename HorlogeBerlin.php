@@ -22,4 +22,14 @@ class HorlogeBerlin
     public function seconds (int $seconds) : int {
         return $seconds%2;
     }
+    public function horloge() : array {
+        $seconds = array(false);
+        $minutes = array(false,false,false,false);
+        $fiveMinutes = array(false,false,false,false,false,false,false,false,false,false,false);
+        $hours = array(false,false,false,false);
+        $fiveHours = array(false,false,false,false);
+        $horloge = array($seconds,$fiveHours,$hours,$fiveMinutes,$minutes);
+
+}
+
 }
