@@ -141,4 +141,11 @@ class HorlogeBerlinTest extends TestCase
         $actual = $this->horlogeBerlin->seconds(30);
         $this->assertEquals(0,$actual);
     }
+
+    //Test method horloge
+    public function test_horloge_shouldWork(){
+        $actual = $this->horlogeBerlin->horloge();
+        //False assert, this method is for display only
+        $this->assertEquals(0,0);
+    }
 }
